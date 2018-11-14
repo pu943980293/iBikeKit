@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'iBikeKit_Example' do
+  pod 'iBikeKit', :path => '../'
+
+  target 'iBikeKit_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
