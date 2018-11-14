@@ -7,7 +7,7 @@
 //
 
 #import "ELViewController.h"
-
+#import "EQRCodeVC.h"
 @interface ELViewController ()
 
 @end
@@ -17,6 +17,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    EQRCodeVC * vc = [[EQRCodeVC alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
